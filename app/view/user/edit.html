@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+--Copyright(c)2016 All rights reserved.
+--@Licenced  http://www.w3.org
+--@Author  liutian<1538731090@qq.com> liutian_jiayi
+--@Create on 2016-6-16 11:53:59
+--@Version 1.0
+-->
+<html>
+	<head>
+		<title>编辑用户页面</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<form method="post" action="index.php?controller=user&action=update">
+			<input type='hidden' name='uid' value='{$userRec["uid"]}' />
+			<p>账号：<input type="text" name="uname" value="{$userRec['uname']}" /></p>
+			<p>昵称：<input type="text" name="nickname" value="{$userRec['nickname']}" /></p>
+			 <input type='submit' value='修改' />
+		</form>
+	</body>
+</html>
